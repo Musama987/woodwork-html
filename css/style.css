@@ -5575,6 +5575,12 @@ ul.gallery-filter li:hover span, ul.gallery-filter.style-2 li.active {
   padding: 0;
   list-style: none;
 }
+.nmbr{
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  margin-top: 11px;
+}
 .single-sidebar-box.service-link-widget ul.catergori-list li {
   list-style: none;
   position: relative;
