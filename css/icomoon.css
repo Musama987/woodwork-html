@@ -42,6 +42,12 @@
 .icon-global:before {
   content: "\e904";
 }
+/* email icons */
+.icon-mail:before, 
+.icon-envelope:before, 
+.icon-message:before {
+   content: "\e904"; /* Example content */
+}
 .icon-left:before {
   content: "\e905";
 }
