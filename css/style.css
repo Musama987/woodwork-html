@@ -9007,3 +9007,14 @@ label.error {
     }
 
 }
+@media (max-width: 768px) {
+  .two-column {
+    padding: 40px 0; /* Less padding for tablets & phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .two-column {
+    padding: 132px 0; /* Even smaller padding for small phones */
+  }
+}
