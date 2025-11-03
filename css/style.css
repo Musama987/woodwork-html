@@ -8857,4 +8857,153 @@ label.error {
     padding-top: 0px;
 }
 
+/* ==============================
+   22. Custom Contact Info Cards
+   ============================== */
+/* .contact-info-cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 
+.contact-info-card {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  border: 2px solid #f1f1f1;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  width: 320px;
+  min-height: 250px;
+  text-align: center;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-10px);
+  border-color: #ab7442;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-card .icon-box {
+  height: 80px;
+  width: 80px;
+  background: #ab7442;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  color: #ffffff;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure icons render clean (no double layers or fallback squares) */
+/* .contact-info-card .icon-box i {
+  display: block;
+  font-style: normal;
+} */
+
+/* Title and text */
+/* .contact-info-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #252525;
+  margin-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+} */
+
+/* .contact-info-card p {
+  color: #a2a2a2;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+} */ 
+
+/* gemini */
+
+/* ==============================
+   22. Custom Contact Info Cards (FIXED)
+   ============================== */
+
+.contact-info-cards {
+    margin-top: 20px;
+}
+
+.contact-info-card {
+    background: #f7f7f7;
+    padding: 40px 7px;
+    border: 2px solid #f1f1f1;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    min-height: 250px;
+    overflow: hidden; /* Important: Hides conflicting elements */
+}
+
+/* This rule hides the faint background icon from the theme */
+.contact-info-card::before {
+    display: none !important;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-10px);
+    border-color: #ab7442;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* This is the main icon circle */
+.contact-info-card .icon-box {
+    font-family: 'icomoon'; /* Specifies the correct icon font library */
+    height: 70px;
+    width: 70px;
+    background: #ab7442;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    z-index: 5; /* Ensures the icon is on top */
+}
+
+/* These rules place the correct icon shape inside the circle */
+.contact-info-card .icon-box.icon-location::before {
+    content: "\e904";
+}
+.contact-info-card .icon-box.icon-mail::before {
+    content: "\e905";
+}
+.contact-info-card .icon-box.icon-technology::before {
+    content: "\e908";
+}
+
+.contact-info-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-info-card p {
+    color: #a2a2a2;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+
+    .contact-info-cards .col-md-4 {
+        width: 80%;                     /* Makes the card container narrower than the full screen */
+        max-width: 450px;                 /* Sets a maximum width for the card */
+        float: none;                      /* IMPORTANT: Disables the side-by-side layout */
+        margin-left: auto !important;     /* Centers the card horizontally */
+        margin-right: auto !important;    /* Centers the card horizontally */
+    }
+
+}
